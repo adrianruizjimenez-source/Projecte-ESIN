@@ -1,0 +1,5 @@
+struct node {
+    int info;
+    node* f_esq;
+    node* f_dret;
+};
