@@ -3,7 +3,7 @@ using namespace std;
 
 bool word_toolkit::es_canonic(const string& s) noexcept {
     bool ascendent = true;
-    char c = s[0];
+    if (s.size() > 0) char c = s[0];
     for (int i = 1; i < s.size() and ascendent; ++i) {
         if (s[i] < c) ascendent = false;
         else c = s[i];
